@@ -116,7 +116,7 @@ class Ticket(models.Model):
         )
         Ticket.validate_row(
             self.row,
-            self.movie_session.cinema_hall.seats_in_row,
+            self.movie_session.cinema_hall.rows,
             ValueError
         )
 
